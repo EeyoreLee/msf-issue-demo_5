@@ -1,0 +1,12 @@
+bind = ["0.0.0.0:41000"]
+worker_class = "gevent"
+workers = 1
+backlog = 2048
+pidfile = "log/gunicorn.pid"
+accesslog = "log/access.log"
+accesslog = "-"
+errorlog = "log/debug.log"
+errorlog = "-"
+timeout = 600
+debug=False
+capture_output = True
